@@ -56,7 +56,6 @@ header{
 .burger_menue{
     position:relative;
     
-    /* background-color: fuchsia; */
 
 }
 .burger_menue .fas{
@@ -64,8 +63,7 @@ header{
     color: #040000;
 }
 .drop_menu{
-    /* background-color: forestgreen; */
-    
+    width:100px;
     position:absolute;
     right: 0;
     display: none;
@@ -85,13 +83,19 @@ header{
 }
 
 .drop_menu a{
+    display: inline-block;
     text-decoration: none;
     color:var(--font_span_color);
     transition: .5s;
+    padding-bottom: 3px;
 }
 .drop_menu li+li{
     margin-top: 10px;
+
     
+}
+.drop_menu li:not(:last-child){
+    border-bottom: 1.5px  solid var(--font_span_color);
 }
 
 .drop_menu li:hover a{
@@ -458,6 +462,7 @@ footer{
     }
     .landing {
         flex-direction: column-reverse;
+         align-items: center;
         
      }
      .contactMe_cont{
